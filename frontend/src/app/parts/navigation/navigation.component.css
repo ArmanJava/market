@@ -1,0 +1,662 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,600,700&subset=cyrillic,cyrillic-ext');
+.cardPOssition{
+  position: fixed;
+right: 0;
+  bottom: 0;
+  z-index: 1;
+  margin-bottom: 20px;
+
+
+}
+/* NAV BARRR*/
+.navbar-vertical-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 690px;
+  width: 225px;
+  overflow: hidden;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+}
+
+.navbar-vertical-left ul.navbar-nav {
+  width: 100%;
+  height: 100%;
+  display: table;
+  margin: 0;
+}
+
+.navbar-vertical-left ul.navbar-nav:before,
+.navbar-vertical-left ul.navbar-nav:after {
+  display: none;
+}
+
+
+.navbar-vertical-left ul.navbar-nav > li {
+  display: table-row;
+  float: none;
+}
+
+.navbar-vertical-left ul.navbar-nav > li > a {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.navbar-vertical-left ul.navbar-nav > li > a > i.fa {
+  margin-right: 20px;
+}
+
+/* Цвета */
+
+.navbar-vertical-left {
+  background: #a94442;
+  color: #ecf0f1;
+}
+
+.navbar-vertical-left ul.navbar-nav > li > a {
+  color: #ecf0f1;
+}
+
+.navbar-vertical-left ul.navbar-nav > li > a.one:hover,
+.navbar-vertical-left ul.navbar-nav > li > a.one:active {
+
+  background: #cecece /* Цвет активной ссылки */
+
+}
+
+.navbar-vertical-left ul.navbar-nav > li > a.two:hover,
+.navbar-vertical-left ul.navbar-nav > li > a.two:active {
+  background: rgb(58,36,83);
+}
+
+.navbar-vertical-left ul.navbar-nav > li > a.tree:hover,
+.navbar-vertical-left ul.navbar-nav > li > a.tree:active {
+  background: rgb(67,41,97);
+}
+
+.navbar-vertical-left ul.navbar-nav > li > a.for:hover,
+.navbar-vertical-left ul.navbar-nav > li > a.for:active {
+  background: rgb(77,47,111);
+}
+
+.navbar-vertical-left ul.navbar-nav > li > a.five:hover,
+.navbar-vertical-left ul.navbar-nav > li > a.five:active {
+  background: rgb(86,53,125);
+}
+
+.navbar-vertical-left ul.navbar-nav > li > a.six:hover,
+.navbar-vertical-left ul.navbar-nav > li > a.six:active {
+  background: rgb(96,59,138);
+}
+
+.navbar-vertical-left ul.navbar-nav > li > a.selected {
+  background: #d35400;
+}
+
+/* Анимация */
+
+.navbar-vertical-left {
+  -webkit-transition: -webkit-transform .3s;
+  -moz-transition: -moz-transform .3s;
+  transition: transform .3s;
+
+  -webkit-transform: translateX(-100px);
+  -moz-transform: translateX(-100px);
+  transform: translateX(-100px);
+}
+.navbar-vertical-left:hover {
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  transform: translateX(0px);
+}
+
+.navbar-vertical-left ul.navbar-nav {
+  -webkit-transition: -webkit-transform .3s;
+  -moz-transition: -moz-transform .3s;
+  transition: transform .3s;
+
+  -webkit-transform: translateX(100px);
+  -moz-transform: translateX(100px);
+  transform: translateX(100px);
+}
+
+.navbar-vertical-left:hover ul.navbar-nav {
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  transform: translateX(0px);
+}
+
+/* Изменения для разрешений */
+
+@media(max-width: 768px) {
+  .navbar-vertical-left {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+  }
+
+  .navbar-vertical-left,
+  .navbar-vertical-left ul.navbar-nav {
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    transform: none;
+  }
+
+  .navbar-vertical-left ul.navbar-nav > li {
+    display: table-cell;
+  }
+
+  .navbar-vertical-left ul.navbar-nav > li > a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 30px;
+  }
+
+  .navbar-vertical-left ul.navbar-nav > li > a > i.fa {
+    margin: 0;
+  }
+
+  .navbar-vertical-left ul.navbar-nav > li > a > span {
+    display: none;
+  }
+}
+/*NAV BAR ENDDD*/
+/*NUMBERS*/
+.languages{
+  float: right;
+  margin-right: 50px;
+
+}.languages img{
+   width: 40px;
+   height: 40px;
+
+ }
+
+
+
+/*NUMBERS*/
+.title{
+  width: 50%;
+  background-color: brown;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-align: center;
+  margin:20px auto;
+  border-radius: 10px;
+}
+
+.vertical-menu {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #112255;
+  color: white;
+}
+.menu2{
+  width: 100%;
+  height: 100px;
+  background-color: #224a69b3;
+  z-index: 3;
+  position: fixed;
+}
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+}
+
+.main{
+  background-color: rgba(34, 74, 104, 0.7);
+}
+.menu ul  li a{
+  text-decoration: none;
+  color: #fff;
+
+}
+.menu ul  li{
+  display: inline-block;
+
+}
+.menu{
+  position: absolute;
+  margin-left: 300px;
+  top: 0;
+  margin-top: 15px;
+}
+img{
+  width: 150px;
+  margin-top: 15px;
+  margin-left: 45px;
+}
+.lang{
+  margin-top: -60px;
+  margin-left: 900px;
+
+
+}
+.lang img{
+  width: 15px;
+  margin-left: 5px;
+  margin-right: 0;
+
+
+}
+.number div a{
+  /*position: relative;*/
+  color: #fff;
+  font-weight: 900;
+  text-decoration: none;
+
+}
+.number{
+  font-size: 17px;
+  margin-top: 7px;
+  width: 200px;
+  font-family: sans-serif, tahoma;
+  margin-left: -90px
+
+}
+.menu li a{
+  font-size: 15px;
+}
+.menu li{
+  padding: 10px 22px 10px 22px;
+  transition: 2s;
+}
+.card{
+  width:500px;
+  height:500px;
+  margin-top: 100px;
+}
+.p{
+  background-color: #eeeeee;
+}
+
+/*asgeg*/
+/* ПОДКЛЮЧЕНИЕ ШРИФТОВ */
+/*@import url('fonts/GothamPro/gotham.css');*/
+/* Очистка отступов делал в первой врстке к дз-6 */
+/***/
+/*{*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+/*
+*
+*
+*
+*/
+/* прибиваю футер к низу*/
+html{
+  height: 100%;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#header {
+  /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex: 0 0 auto;
+}
+.contacts-page {
+  /* 1 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex: 1 0 auto;
+}
+footer{
+  /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex: 0 0 auto;
+}
+
+/* End hide from IE-mac */
+/*
+*
+*
+*
+*
+/* Стиль преобразования блочных в строчно блочные */
+.inline-block
+{
+  display: inline-block; /* пробовал выравнивать меню через эти стили*/
+}
+
+body
+{
+  font-family: 'Montserrat', sans-serif;
+}
+
+a
+{
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover
+{
+  text-decoration: none;
+}
+p,
+h5
+{
+  color: #6c6c6c;
+}
+
+h5
+{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+
+/**
+* Сброс стилей по умолчанию с тега <button>.
+*/
+button
+{
+  font: inherit;
+
+  padding: 0;
+
+  cursor: pointer;
+  text-transform: uppercase;
+
+  color: inherit;
+  border: none;
+  /* отображаем курсор в виде руки при наведении; некоторые
+    считают, что необходимо оставлять стрелочный вид для кнопок */
+  background-color: transparent;
+}
+.clr
+{
+  clear: both;
+}
+/*******************************************/
+/*******************************************/
+/* НАЧАЛО СТИЛЕЙ ДЛЯ ГЛАВНОЙ СТРАНИЦЫ САЙТА**
+*
+* ОБЕРТКА ДЛЯ ВСЕГО САЙТА */
+.my-wrapper
+{
+  width: 1366px;
+  margin: 0 auto;
+
+}
+.my-wrapper-index {
+  padding-left: 0;
+}
+/*******************************************************
+*
+*
+* БЛОК: ШАПКА САЙТА С ГЛАВНЫМ МЕНЮ САЙТА -- <header>
+*/
+#header
+{
+  height: 680px;
+/*width: 1720px;*/
+  background-image: url(src/assets/images/slider-img.jpg);
+  margin-right: 10px;
+}
+
+/* ПАНЕЛЬ С ЛОГОТИПОМ, НАВИГАЦИЕЙ и ПОИСКОМ */
+.header-my-nav-bar
+{
+  height: 90px;
+}
+
+/* ЛОГОТИП */
+.logo
+{
+  float: left;
+
+  width: 185px;
+  height: 22px;
+  margin-top: 63px;
+  margin-right: 311px;
+  margin-left: 98px;
+
+  background-image: url(src/assets/images/logo.png);
+}
+
+/* МЕНЮ */
+.menu
+{
+  float: left;
+
+}
+.menu ul
+{
+  list-style-type: none;
+
+  text-transform: uppercase;
+}
+
+.menu ul li
+{
+  float: left;
+
+  margin-top: 47px;
+  margin-right: 14px;
+  margin-left: 10px;
+}
+
+.menu a
+{
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 48px;
+
+  display: block;
+
+  height: 43px;
+
+  text-transform: uppercase;
+
+  color: #8c8c8c;
+}
+
+.menu a:hover
+{
+  color: #212121;
+  border-bottom: 2px solid #000;
+}
+.active-home {
+  color: #000!important;
+
+}
+
+/* ПОИСК ПО САЙТУ  ***Вариант-1***
+Просто класс с  размещением в bg картинки png*/
+/*.search {*/
+/*    width: 23px;*/
+/*    height: 23px;*/
+/*    background-image: url(img/search.png);*/
+/*    float: left;*/
+/*    margin-top: 63px;*/
+/*    margin-left: 11px;*/
+/*}*/
+
+
+
+/* БЛОК НАДПИСИ НА СЛАЙДЕРЕ */
+#header .slider-content
+{
+  margin-top: 268px;
+  margin-left: 98px;
+}
+
+.slider-content_tag
+{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 48px;
+  /*width: 109px;*/
+
+  height: 13px;
+  margin-bottom: 22px;
+
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+
+  color: #43a047;
+}
+
+.slider-content_name
+{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 56px;
+  font-weight: 200;
+  line-height: 72px;
+
+  width: 439px;
+  margin-bottom: 17px;
+
+  text-transform: uppercase;
+
+  color: #212121;
+}
+
+.slider-content_details
+{
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+
+  width: 458px;
+  margin-bottom: 28px;
+  /*height: 38px;*/
+
+  color: #6c6c6c;
+}
+
+.main_btn
+{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 45px;
+
+  position: relative;
+
+  display: block;
+
+  width: 212px;
+  height: 45px;
+
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+
+  color: #212121!important;
+  border-radius: 23px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 5px 1px rgba(33, 33, 33, .35);
+  box-shadow: 0 2px 5px 1px rgba(33, 33, 33, .35);
+}
+.main_btn:hover
+{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+  border: .5px solid #000;
+  /*box-shadow: none;*/
+}
+.main_btn:active
+{
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.main_btn:hover::after
+{
+  position: absolute;
+  right: 20px;
+
+  content: url(src/assets/images/arrow-btn.png);
+}
+
+#header .slider-navigation-items
+{
+  margin-top: 139px;
+}
+
+.slider-navigation-items
+{
+  width: 120px;
+  height: 40px;
+  margin: 20px auto;
+}
+
+.navigation__item
+{
+  display: inline-block;
+
+  width: 30px;
+  height: 30px;
+
+  vertical-align: super;
+
+  border-radius: 50%;
+  background-color: #c7c7c7;
+}
+.navigation__item:hover
+{
+  background-color: #9c9c9c;
+}
+.navigation__item-active
+{
+  display: inline-block;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+  background-color: #212121;
+}
+
+
+
+
+
+
+
+
+
+
+/*.knopkaSuc{*/
+/*  margin-left: 90px;*/
+/*}*/
+.knopkaReg{
+  margin-left: 20px;
+}
+.nav-item{
+padding-left:0;
+}
+

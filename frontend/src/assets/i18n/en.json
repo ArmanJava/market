@@ -1,0 +1,54 @@
+{
+  "MARKETNAME": "ARMANJAN",
+  "HOME": "Home",
+  "BOOKS": "Books",
+  "FOOD": "Food",
+  "CLOTHES": "Clothes",
+  "DRINK": "Drink",
+  "SingOut": "Sing out",
+  "SingIn": "Sing in",
+  "SingUp": "Registration",
+
+  "Russia": "Russia",
+  "UsefullInformation": "Usefull Information",
+  "Sales": "Terms of Sale",
+  "Customer": "CustomerService",
+  "Delivery": "Delivery",
+  "Contact": "Click to go to the Map",
+  "ArchitectAccount": "Architect Account",
+  "Carrers": "Carreer with us",
+  "ExchangesReturns": "Exchanges & Returns",
+  "Copyright": "© Copyright  All Rights Reserved.",
+  "Conditions": " Terms & Conditions",
+  "Privacy": "Privacy policy & Cookies",
+  "GetIt": "Get it",
+  "Description": "Description :",
+  "Price": "Price :",
+  "Stock": "Stock :",
+  "Quantity": "Quantity :",
+  "Subtotal": "Subtotal :",
+  "AddToCart": "Add to Cart ",
+  "Photo": "Photo :",
+  "Name": "Name :",
+  "Action": "Action :",
+  "Total": "Total :",
+  "Checkout": "BUY ",
+  "Remove": "Remove",
+  "Order": "Order",
+  "CustomerName": "Customer Name",
+  "CustomerEmail": "Customer email ",
+  "CustomerPhone": "Customer Phone",
+  "ShippingAddress": "Shipping Address",
+  "OrderData": "OrderData",
+  "Status": "Status",
+  "Code": "Code :",
+  "Type": "Type"
+
+
+
+
+
+
+
+
+}

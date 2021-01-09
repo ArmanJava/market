@@ -1,0 +1,28 @@
+#card{
+  margin:0 auto;
+
+}
+.btn-lg{
+  height: 50px;
+  width: 150px;
+  margin-right: 50%;
+}
+img{
+  height: 200px;
+  width: 200px;
+}
+.mb-4{
+  border: none;
+
+  margin:0 150px auto 150px;
+}
+.mb-3{
+  border: none;
+
+  margin:0 150px auto 150px;
+}
+/*.mb-5{*/
+/*  !*display: flex;*!*/
+/*  margin-right: 500px;*/
+/*}*/
+
