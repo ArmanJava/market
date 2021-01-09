@@ -1,0 +1,211 @@
+/* ПОДКЛЮЧЕНИЕ ШРИФТОВ */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,600,700&subset=cyrillic,cyrillic-ext');
+/*@import url('fonts/GothamPro/gotham.css');*/
+/* Очистка отступов делал в первой врстке к дз-6 */
+/***/
+/*{*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+/*
+*
+*
+*
+*/
+/* прибиваю футер к низу*/
+html{
+  height: 100%;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.contact_footer{
+  color: black;
+}
+
+
+footer{
+  /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex: 0 0 auto;
+}
+
+/* End hide from IE-mac */
+/*
+*
+*
+*
+*
+/* Стиль преобразования блочных в строчно блочные */
+
+
+body
+{
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+
+/*************************
+*
+* БЛОК FOOTER */
+#footer,
+#my-footer
+{
+  background-color: #f7f7f7;
+
+}
+
+#footer h5
+{
+  margin-bottom: 17px;
+}
+
+.sub_wrap
+{
+  width: 1171px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+}
+
+#footer .sub-wrap_top
+{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  padding-top: 117px;
+}
+
+#footer .contact
+{
+  width: 221px;
+}
+
+#fo
+{
+  margin-bottom: 30px;
+}
+#footer .contact  p,
+#my-footer .contact  p
+{
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+
+  color: #212121;
+}
+
+#footer .useful-info
+{
+  width: 422px;
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+#footer .useful-info p
+{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  text-align: left;
+}
+
+#footer .useful_link a,
+#my-footer .useful_link a
+{
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+
+  display: block;
+
+  margin-bottom: 16px;
+
+  letter-spacing: .7px;
+  text-transform: uppercase;
+
+  color: #212121;
+}
+
+#footer .useful_link:first-child
+{
+  margin-right: 103px;
+}
+
+#footer .form,
+#my-footer .form
+{
+  width: 372px;
+}
+
+#footer .form p,
+#my-footer .form p
+{
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+
+  width: 370px;
+  margin-bottom: 26px;
+
+  color: #212121;
+}
+
+#footer input,
+#my-footer input
+{
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /*width: 370px;*/
+  width: 372px;
+  height: 48px;
+  padding-left: 19px;
+
+  color: #6c6c6c;
+  border: 1px solid #d9dee1;
+  background-color: #fff;
+}
+
+
+.sub-wrap_bottom
+{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  margin-top: 27px;
+
+}
+.copy-right {
+  font-size: small;
+}
+.agreement a
+{
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 26px;
+
+  letter-spacing: .6px;
+  text-transform: uppercase;
+
+  color: #6c6c6c;
+}
+
+

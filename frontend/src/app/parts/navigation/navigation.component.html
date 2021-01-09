@@ -1,0 +1,211 @@
+<!--<link rel="stylesheet" href="https://bootstraptema.ru/plugins/font-awesome/4-4-0/font-awesome.min.css/" />-->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css/" />-->
+
+
+<div class="container">
+  <div class="row">
+    <div class="navbar-nav" *ngIf="!currentUser || currentUser.role == Role.Customer">
+
+
+      <a *ngIf="!currentUser || currentUser.role == Role.Customer"
+         class="nav-item nav-link cardPOssition" >
+<!--        <i class="fas fa-shopping-cart" onclick="window.scroll(0,900)" >-->
+          <img  routerLink="/cart" src="assets/images/card2.png"  alt="cart" onclick="window.scroll(0,900)">
+<!--        </i > Cart-->
+      </a>
+
+
+
+    <nav class="navbar navbar-vertical-left">
+      <ul class="nav navbar-nav">
+        <li>
+          <a routerLink="/category" class="one">
+            <i class="fa fa-fw fa-lg fa-home"></i>
+            <span>{{'HOME' | translate}}</span>
+          </a>
+        </li>
+        <li>
+                <a class="nav-item nav-link one "
+             routerLink="/category/0" onclick="window.scroll(0,900)" >
+            <i class="fa fa-fw fa-lg fa-star"></i>{{'BOOKS' | translate}}
+          </a>
+        </li>
+        <li>
+          <a class="nav-item nav-link one"
+             routerLink="/category/1" onclick="window.scroll(0,900)" >
+            <i class="fa fa-fw fa-lg fa-star"></i>{{'FOOD' | translate}}
+          </a>
+         </li>
+        <li>
+          <a class="nav-item nav-link one "
+             routerLink="/category/2" onclick="window.scroll(0,900)" >
+            <i class="fa fa-fw fa-lg fa-star"></i> {{'CLOTHES' | translate}}
+          </a>
+        </li>
+        <li>
+          <a class="nav-item nav-link one"
+             routerLink="/category/3" onclick="window.scroll(0,900)" >
+            <i class="fa fa-fw fa-lg fa-star"></i> {{'DRINK' | translate}}
+          </a>
+        </li>
+      </ul>
+    </nav>
+    </div>
+  </div>
+</div>
+
+<div class="my-wrapper my-wrapper-index">
+  <div id="header">
+    <nav class="header-my-nav-bar">
+      <a  routerLink="/category" class="logo" ></a>
+
+      <div class="menu">
+        <!-- БЛОК МЕНЮ САЙТА -->
+        <!--        <a class= "nav-link active-home" routerLink="contact" routerLinkActive="active" onclick="window.scroll(0,900)">Contact Us</a>-->
+        <!--        <form class="" action="#">-->
+        <!--          <div  >-->
+        <!--            <h5>Login</h5><input class="login" type="text">-->
+        <!--            <h5>Password</h5><input class="password" type="password">-->
+        <!--            <br>-->
+        <!--            <br>-->
+        <!--            <button type="button" class="btn btn-success knopkaSuc">Success</button>-->
+        <!--            <button type="button" class="btn btn-primary knopkaReg">Registered</button>-->
+        <!--&lt;!&ndash;            <button type="reset" class="btn btn-danger knopka">Reset</button>&ndash;&gt;-->
+        <!--          </div>-->
+        <!--        </form>-->
+        <br>
+<!--        /////////////////////NAV BEGINNNNNNNNNNN////////////////////////-->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+<!--          <a class="navbar-brand" [routerLink]="root">-->
+<!--            <img src="/assets/brand.png" width="30" height="30" class="d-inline-block align-top" alt="">-->
+<!--            E-Shop-->
+<!--          </a>-->
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+
+
+
+            <div class="navbar-nav ml-auto">
+
+
+              <ng-container *ngIf="currentUser; else noUser">
+                <a class="nav-item nav-link " routerLink="/order">
+                  <i class="fas fa-list-ul"></i>
+                  Orders
+                </a>
+                <a *ngIf="currentUser?.role == Role.Manager "class="nav-item nav-link " routerLink="/seller/product">
+                  <i class="fas fa-list-ul"></i>
+                  Product List
+                </a>
+                <a class="nav-item nav-link " routerLink="/profile">
+                  {{name}}
+                </a>
+                <a class="nav-item nav-link " (click)="logout()" routerLink="/login" [queryParams]="{logout: true}">
+                  {{'SingOut' | translate}}
+                </a>
+              </ng-container>
+              <ng-template #noUser>
+                <a class="nav-item nav-link " routerLink="/login" onclick="window.scroll(0,900)" >
+                  {{'SingIn' | translate}}
+                </a>
+                <a class="nav-item nav-link " routerLink="/register" onclick="window.scroll(0,900)" >
+                  {{'SingUp' | translate}}
+                </a>
+              </ng-template>
+            </div>
+          </div>
+        </nav>
+<!--        ///////////////////////////////NAV ENDDDDDDDDDDD////////////////////////////-->
+<!--        <ul>-->
+<!--          <li><a class= "nav-link active-home" routerLink="login" routerLinkActive="active" onclick="window.scroll(0,900)" [routerLinkActiveOptions]="{exact: true}">Registered</a></li>-->
+<!--          <li><a class= "nav-link active-home" routerLink="rolex" routerLinkActive="active" onclick="window.scroll(0,900)" [routerLinkActiveOptions]="{exact: true}">Rolex</a></li>-->
+
+
+<!--          <li><a class= "nav-link active-home" routerLink="omega" onclick="window.scroll(0,900)" routerLinkActive="active">Omega</a></li>-->
+<!--          <li> <a class= "nav-link active-home" routerLink="tissot" onclick="window.scroll(0,900)" routerLinkActive="active">Tissot</a></li>-->
+<!--          <li><a class= "nav-link active-home" routerLink="mebel" onclick="window.scroll(0,900)" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Mebel</a></li>-->
+<!--          <li><a class= "nav-link active-home" routerLink="products" onclick="window.scroll(0,900)" routerLinkActive="active">Products other</a></li>-->
+<!--          <li class="clr"></li>-->
+<!--        </ul>-->
+
+      </div>
+
+
+
+
+
+
+
+
+      <!-- БЛОК ПОИСКА В МЕНЮ -->
+      <!-- ****** Вариант-1: просто отображение картинки с"Лупой" ********** -->
+      <!-- <div class="search "></div>-->
+      <!-- ****** Вариант-2: отображение с формой поиска на сайте **********-->
+      <!--            <form class="my-form-search" action="#" target="_blank">-->
+      <!--                <input id="#" class="form-my-control" type="search"-->
+      <!--                       style="font-family: 'Montserrat', 'Font Awesome 5 Free'; font-weight: 600; color: #777; font-size: 20px;"-->
+      <!--                       placeholder="&#xf002;"/>-->
+      <!--            </form>-->
+      <!-- ****** Вариант-3: отображение дива с полем input и скриптом ****-->
+<!--      <div class="my-block-search">-->
+<!--        <button class="my-block-search__btn"><i class="fas fa-search fa-2x"></i></button>-->
+<!--        <div class="my-block-search__input">-->
+<!--          <label>-->
+<!--            <input placeholder="Введите свой запрос..." type="text">-->
+<!--          </label>-->
+<!--        </div>-->
+<!--      </div>-->
+      <!-- *************************************************************** -->
+    </nav>
+    <div class="slider">
+      <div class="slider-content">
+        <h3 class="slider-content_tag">TRENDING</h3>
+        <h1 class="slider-content_name">Fishnet Chair</h1>
+        <p class="slider-content_details">Seat and back with upholstery made of cold cure foam. Steel frame,
+          available in matt powder-coated black </p>
+        <!-- Для разнообразия сделал кнопку в ввиде ссылки
+         с тегом <a>. Дальше буду делать с тегом <button>.
+         Класс для оформления что тега <a>, что тега
+         <button> один и тотже .main_btn-->
+        <!--        <a class="main_btn">-->
+        <!--          <span>Order Us </span>-->
+        <!--          <li><a class= "nav-link active-home" routerLink="rolex" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Rolex</a></li>-->
+        <!--        </a>-->
+        <a  class= "nav-link active-home" routerLink="/category"  routerLinkActive="active"><img id="clic" title="UP" src="assets/images/unnamed.png" onclick="window.scroll(0,900);">Click to Buy</a>
+
+      </div>
+    </div>
+    <br>
+    <br>
+
+    <!--            <div class="slider-navigation-items">-->
+    <!--      <span class="navigation__item"></span>-->
+    <!--      <span class="navigation__item-active"></span>-->
+    <!--      <span class="navigation__item"></span>-->
+    <!--    </div>-->
+  </div>
+</div>
+
+<br>
+<div class="row">
+  <div class="col-12">
+    <h2 class="title">{{'MARKETNAME' | translate}}</h2>
+    <div class="vertical-menu">
+
+
+
+
+
+
+      <!--      <a routerLink="omega" routerLinkActive="active">Omega</a>-->
+      <!--      <a routerLink="tissot" routerLinkActive="active">Tissot</a>-->
+    </div>
+
+
+  </div>
+</div>
+<!--<br><br><br><br>-->

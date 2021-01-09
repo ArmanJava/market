@@ -1,0 +1,132 @@
+/*<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"*/
+/*integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">*/
+/*                                                                                                           */
+/*<!-- Bootstrap CSS -->*/
+/*<link rel="stylesheet" href="css/bootstrap.css">*/
+
+/*<!-- Собственные стили CSS -->*/
+/*<link rel="stylesheet" href="main.css">*/
+/* <link rel="stylesheet" href="css/product.css">*/
+
+/* ПОДКЛЮЧЕНИЕ ШРИФТОВ */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,600,700&subset=cyrillic,cyrillic-ext');
+/*@import url('fonts/GothamPro/gotham.css');*/
+/* Очистка отступов делал в первой врстке к дз-6 */
+/***/
+/*{*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+/*
+*
+*
+*
+*/
+/* прибиваю футер к низу*/
+html{
+  height: 100%;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header {
+  /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex: 0 0 auto;
+}
+.contacts-page {
+  /* 1 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex: 1 0 auto;
+}
+
+
+
+/* ****************
+*******************
+  СТРАНИЦА CONTACTS
+*
+* <header>
+* МОДУЛЬ-5:__КАРТОЧКИ С КОНТАКТАМИ *
+**
+** Карточки с контактами */
+
+.my-contacts-header{
+  padding-top: 53px!important;
+}
+.contacts-page
+{
+  width: 1170px;
+  margin-top: 71px;
+  margin-bottom: 122px;
+}
+.contacts-page__items
+{
+  height: 370px;
+}
+.contacts-page__item
+{
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  background: #cecece;
+}
+.contacts-page__content
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  opacity: .8;
+  background: #fff;
+}
+.contacts-page__item:hover .contacts-page__content
+{
+  z-index: 10;
+  bottom: 30px;
+
+  display: none;
+
+  cursor: pointer;
+
+  background: red;
+}
+.contacts-page__content img
+{
+  width: 38px;
+  height: 48px;
+  margin-top: 48px;
+}
+.contacts-page__content h5
+{
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 29px;
+
+  text-transform: uppercase;
+
+  color: #212121;
+}
+.contacts-page__content p
+{
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  /* Style for "Phone: 190" */
+
+  height: 138px;
+
+  color: #6c6c6c;
+}
+.contacts-page__content span
+{
+  font-weight: 500;
+}

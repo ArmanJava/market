@@ -1,0 +1,16 @@
+/*NUMBERS*/
+.languages{
+  float: right;
+  margin-right: 300px;
+  margin-top: 20px;
+  /*top: 50px;*/
+
+}.languages img{
+   width: 40px;
+   height: 40px;
+
+ }
+.butt{
+  border : none;
+
+}
